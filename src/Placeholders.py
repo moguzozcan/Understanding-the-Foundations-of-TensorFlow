@@ -19,7 +19,7 @@ print("sum(x) / prod(y):", sess.run(final_div, feed_dict={x:[10, 20, 30], y: [1,
 
 print("mean(sum(x), prod(y)):", sess.run(final_mean, feed_dict={x: [1000, 2000, 3000], y: [10, 20, 30]}))
 
-writer = tf.summary.FileWriter('../m3_example1', sess.graph)
+writer = tf.summary.FileWriter('./tensorboards/m3_example1', sess.graph)
 
 writer.close()
 sess.close()

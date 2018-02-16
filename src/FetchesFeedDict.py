@@ -24,5 +24,5 @@ with tf.Session() as sess:
 
     print("Two results: [Wx : b, x -  b] = ", sess.run(fetches=[y, y_], feed_dict={x: [5, 50], b: [7, 9]}))
 
-writer = tf.summary.FileWriter('../m3_example2', sess.graph)
+writer = tf.summary.FileWriter('./tensorboards/m3_example2', sess.graph)
 writer.close()

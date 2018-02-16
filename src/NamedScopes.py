@@ -21,5 +21,5 @@ y = y1 + y2
 with tf.Session() as sess:
     print(sess.run(y, feed_dict={x: [10]}))
 
-    writer = tf.summary.FileWriter('../m3_example5', sess.graph)
+    writer = tf.summary.FileWriter('./tensorboards/m3_example5', sess.graph)
     writer.close()
